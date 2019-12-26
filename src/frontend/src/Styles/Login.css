@@ -1,0 +1,30 @@
+.Login {
+    font-family: CircularStd,Helvetica, Arial, sans-serif;
+    background-color: rgb(40,40,40);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.content {
+    margin-top:-90px; 
+}
+
+
+.header{
+margin-top:-30px; 
+position: relative;
+color:white;
+}
+
+.desc{
+color: rgb(170,170,170);
+}
+
+.space {
+    margin: 5px;
+}
