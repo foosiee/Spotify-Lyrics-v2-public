@@ -2,6 +2,9 @@
 a react app that uses spotify's web api to request user info and a serverless azure function to grab the lyrics of the song.
 http://spotify-lyrics.com/
 
+## Note
+if you were to pull down this repo. You will need to add a .env file with your azure creds and add a config.js with your spotify application creds.
+
 ## login
 <img width="1304" alt="screen shot 2019-02-11 at 7 52 08 pm" src="https://user-images.githubusercontent.com/33300547/52603841-8c643580-2e36-11e9-995c-0e3f95023c7a.png">
 
