@@ -2,6 +2,8 @@
 a react app that uses spotify's web api to request user info and a serverless azure function to grab the lyrics of the song.
 http://spotify-lyrics.com/
 
+the legacy spotify-lyrics is avaiable [here](https://github.com/foosiee/Spotify-Lyrics). it used a python-flask server to serve users.
+
 ## note
 if you were to pull down this repo. You will need to add a .env file with your azure creds and add a config.js with your spotify application creds.
 
