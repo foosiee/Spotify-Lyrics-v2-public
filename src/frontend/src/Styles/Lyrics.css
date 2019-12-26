@@ -25,8 +25,9 @@
     align-self: center;
 }
 
-.noMargins {
+.lyric {
     margin: 0px;
+    font-size: 18px;
 }
 
 h1 {

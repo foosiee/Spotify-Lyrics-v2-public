@@ -29,7 +29,6 @@ class Lyrics extends Component {
     }
 
     async loadData(_this) {
-        console.log("spotify request");
         const url = "https://api.spotify.com/v1/me/player";
         try {
             const response = await fetch(url, {
@@ -42,7 +41,6 @@ class Lyrics extends Component {
             });
             try {
                 const json = await response.json();
-                console.log(json);
                 var artists = [];
                 var currSong = json.item.name;
                 json.item.artists.forEach(element => {
@@ -51,14 +49,12 @@ class Lyrics extends Component {
                 var artistsString = artists.join()
 
                 if(currSong !== _this.state.song) {
-                    console.log("Getting lyrics for new song");
                     await _this.setState({song: currSong, artist: artistsString});
                     await _this.getLyrics(_this);
                 }
             } catch(error) {
                 _this.setState({song:"Not Listening", artist:"Nobody", lyrics: "Nope"});
             }
-            //console.log('Success:', JSON.stringify(json));
         } catch (error) {
             console.error('Error:', error);
         }
@@ -77,9 +73,6 @@ class Lyrics extends Component {
         data.append("song", _this.formatSong(_this.state.song));
         data.append("artist", _this.state.artist);
 
-        console.log(_this.formatSong(_this.state.song))
-        console.log(_this.state.artist)
-
         try {
             const response = await fetch(url, {
                 signal: _this.controller.signal,
@@ -92,8 +85,15 @@ class Lyrics extends Component {
             const json = await response.json();
             //lyrics = lyrics.replace(/\n/g, "<br />");
             if(response.ok) {
-                var lyrics = json.lyrics.split('\n').map((item, i) => {
-                    return <p className="noMargins" key={i}>{item}</p>;
+                var split = json.lyrics.split('\n');
+                var lyrics = [];
+                split.forEach((lyric,i) => {
+                    if(lyric === ""){
+                        lyrics.push(<p className="lyric" key={i} ><br /></p>)
+                    }
+                    else {
+                        lyrics.push(<p className="lyric" key={i}>{lyric}</p>);
+                    }
                 });
                 _this.setState({lyrics})
             }

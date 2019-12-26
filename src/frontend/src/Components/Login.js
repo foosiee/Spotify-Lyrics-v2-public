@@ -55,7 +55,7 @@ class Login extends Component {
                         <Button style={
                             {color: "#aaaaaa", fontFamily: "CircularStd", fontSize: "16px"}
                             }
-                            href="https://github.com/foosiee/Spotify-Lyrics"
+                            href="https://github.com/foosiee/Spotify-Lyrics-v2-public"
                             target="_blank">
                         View on GitHub</Button>
                     </div>
