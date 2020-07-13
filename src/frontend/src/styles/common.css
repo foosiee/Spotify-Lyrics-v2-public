@@ -1,0 +1,14 @@
+.w-100 {
+  width: 100%;
+}
+
+.text {
+  color: rgb(240, 240, 240);
+  text-align: left;
+  padding-left: 25px;
+  margin: 0px;
+}
+
+.spotify-green {
+  color: rgb(30, 215, 96);
+}

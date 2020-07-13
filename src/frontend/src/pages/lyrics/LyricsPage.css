@@ -1,0 +1,21 @@
+.Lyrics {
+  min-height: 100vh;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.dropdown-menu {
+  float: right;
+  margin: 2%;
+}
+
+.scrollable {
+  overflow-y: auto;
+  max-height: 100vh;
+}
