@@ -4,6 +4,8 @@ http://spotify-lyrics.com/
 
 the legacy spotify-lyrics is avaiable [here](https://github.com/foosiee/Spotify-Lyrics). it used a python-flask server to serve users.
 
+thanks to [JMPerez](https://github.com/JMPerez) and [skovmand](https://github.com/skovmand) of [spotify-web-api-js](https://github.com/JMPerez/spotify-web-api-js) for the awesome typescript definitions for the spotify web api
+
 ## note
 if you were to pull down this repo. You will need to add a .env file with your aws api gateway creds and add a config.js with your spotify application creds.
 
