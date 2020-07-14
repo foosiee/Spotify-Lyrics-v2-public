@@ -8,8 +8,9 @@ the legacy spotify-lyrics is avaiable [here](https://github.com/foosiee/Spotify-
 if you were to pull down this repo. You will need to add a .env file with your aws api gateway creds and add a config.js with your spotify application creds.
 
 ## login
-<img width="1304" alt="screen shot 2019-02-11 at 7 52 08 pm" src="https://user-images.githubusercontent.com/33300547/52603841-8c643580-2e36-11e9-995c-0e3f95023c7a.png">
+<img width="1304" alt="screen shot 2019-02-11 at 7 52 08 pm" src="images/loginPage.png">
 
 ## result
 
-<img width="1237" alt="screen shot 2018-12-05 at 5 08 54 pm" src="https://user-images.githubusercontent.com/33300547/49547617-2ea0f380-f8b1-11e8-97c8-0d46f095add3.png">
+<img width="1237" alt="screen shot 2018-12-05 at 5 08 54 pm" src="images/lyricsPage.png">
+The player at the bottom of the screen is usable for Spotify premium subscribers.
